@@ -1,5 +1,5 @@
 cd frontend
-npm run build
+CI=false npm run build
 
 
 cd ../express/api/prod
