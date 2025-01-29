@@ -1,3 +1,6 @@
 [build]
   command = "./deploy.sh"
-  publish = "frontend/build"
+  publish = "frontend/build"  # Ensure this points to your build output directory
+
+[functions]
+  directory = "netlify/functions"
