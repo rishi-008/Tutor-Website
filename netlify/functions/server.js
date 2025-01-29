@@ -1,20 +1,17 @@
 const express = require("express");
-const serverless = require('serverless-http');
+const serverless = require("serverless-http");
 const fs = require("fs");
 const path = require("path");
 const app = express();
-// const PORT = 3000;
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "../../frontend/build")));
 
-
-const accountsFilePath = path.join(__dirname, "api/accounts.json");
-const reportsFilePath = path.join(__dirname, "api/reports.json");
-const sessionsFilePath = path.join(__dirname, "api/sessions.json");
-const resourcesFilePath = path.join(__dirname, "api/resources.json");
-const universityFilePath = path.join(__dirname, "api/universities.json");
-
+const accountsFilePath = path.join(__dirname, "../api/accounts.json");
+const reportsFilePath = path.join(__dirname, "../api/reports.json");
+const sessionsFilePath = path.join(__dirname, "../api/sessions.json");
+const resourcesFilePath = path.join(__dirname, "../api/resources.json");
+const universityFilePath = path.join(__dirname, "../api/universities.json");
 
 const Tables = Object.freeze({
     ACCOUNTS: accountsFilePath,
@@ -43,23 +40,7 @@ const writeData = (data, table) => {
     }
 };
 
-// app.put("/api/tutor/description/:id", (req, res) => {
-//     const { id } = req.params;
-//     const { description } = req.body;
-//     const data = readData(Tables.ACCOUNTS);
-//     const item = data.tutors.find((item) => item.id == id);
-//     if (item) {
-//         item.description = description;
-//         //tried replacing but doesn't work. May need to just remove the user and add back
-//         // let index = data.tutors.findIndex((tutor) => tutor.id == id);
-//         data.tutors[index].description = description;
-//         writeData(data, Tables.ACCOUNTS);
-//         res.json(item);
-//     } else {
-//         res.status(404).json({ message: "Item not found" });
-//     }
-// });
-
+// Defining routes here
 app.get("/api/student/id", (req, res) => {
     const data = readData(Tables.ACCOUNTS);
     let max = 0;
@@ -118,6 +99,7 @@ app.delete("/api/tutor/:id", (req, res) => {
         res.status(404).json({ message: "Item not found" });
     }
 });
+
 // Get all items for student accounts
 app.get("/api/student", (req, res) => {
     const data = readData(Tables.ACCOUNTS);
@@ -134,7 +116,6 @@ app.get("/api/student/:id", (req, res) => {
         res.status(404).json({ message: "Item not found" });
     }
 });
-
 
 // Add a new item to student accounts
 app.post("/api/student", (req, res) => {
@@ -175,20 +156,6 @@ app.delete("/api/student/:id/notification/:nid", (req, res) => {
         res.status(404).json({ message: "Item not found" });
     }
 });
-
-// app.put("/api/tutor/description/:id", (req, res) => {
-//     const { id } = req.params;
-//     const { description } = req.body;
-//     const data = readData(Tables.ACCOUNTS);
-//     const item = data.tutors.find((item) => item.id == id);
-//     if (item) {
-//         item.description = description;
-//         writeData(data, Tables.ACCOUNTS);
-//         res.json(item);
-//     } else {
-//         res.status(404).json({ message: "Item not found" });
-//     }
-// });
 
 app.put("/api/tutor/description/:id", (req, res) => {
     const { id } = req.params;
@@ -242,7 +209,6 @@ app.put("/api/tutor/courses/:id", (req, res) => {
         for(let i = 0; i < courses.length; i++) {
             item.tutor.courses.push(courses[i]);
         };
-        // item.courses.push(course);
         updatedTutors.push(item);
         data.tutors = updatedTutors;
         writeData(data, Tables.ACCOUNTS);
@@ -468,13 +434,13 @@ app.post("/api/reports", (req, res) => {
 
 // serve react app
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/build", "index.html"));
+    res.sendFile(path.join(__dirname, "../../frontend/build", "index.html"));
 });
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
+// Remove the server start line for Netlify Functions
+// app.listen(PORT, () => {
+//     console.log(`Server running on http://localhost:${PORT}`);
+// });
 
 function getResourcesFromId(id) {
     const data = readData(Tables.RESOURCES);
