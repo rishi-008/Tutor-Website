@@ -1,9 +1,13 @@
 **Tutor Website**
 **Deployed Website:** https://sprightly-kitten-69d268.netlify.app
+**Project Live Demo:** https://www.youtube.com/watch?v=z4kNH7HaTiQ
+
+. 
 
 Side Note: (I'm currently working with Netlify functions to get the backend portion working to get the full functionality working but I am currently facing problems hence only the frontend is working here)
 
-Project Live Demo: https://www.youtube.com/watch?v=z4kNH7HaTiQ
+.
+
 Screenshots of Major Screens:
 <img width="1792" alt="Screenshot 2025-01-29 at 6 19 42 PM" src="https://github.com/user-attachments/assets/d16410c3-7efd-4287-b5d6-1c4dcdc2ec34" />
 <img width="1792" alt="Screenshot 2025-01-29 at 6 26 09 PM" src="https://github.com/user-attachments/assets/7a5e94b7-7318-4b9e-9461-1a3bee50c55b" />
