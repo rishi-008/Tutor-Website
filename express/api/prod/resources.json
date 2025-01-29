@@ -1,0 +1,24 @@
+{
+    "resources": [
+        {
+            "id": 1,
+            "name": "Physics 101",
+            "bytes": "asdasd"
+        },
+        {
+            "id": 2,
+            "name": "Chemistry 201",
+            "bytes": "asdasd"
+        },
+        {
+            "id": 3,
+            "name": "Computer Science 101",
+            "bytes": "asdasd"
+        },
+        {
+            "id": 4,
+            "name": "Mathematics 201",
+            "bytes": "asdasd"
+        }
+    ]
+}

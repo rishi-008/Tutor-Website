@@ -1,0 +1,25 @@
+{
+    "universities": [
+        {
+            "name": "University of Toronto",
+            "tutors": [
+                1,
+                2
+            ],
+            "availableCourses": [
+                "Computer Science 101",
+                "Mathematics 201"
+            ]
+        },
+        {
+            "name": "TMU",
+            "tutors": [
+                1
+            ],
+            "availableCourses": [
+                "Physics 101",
+                "Chemistry 201"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "sessions": [
+        {
+            "id": 1,
+            "student": "John Doe",
+            "studentId": 0,
+            "tutor": "Jane Smith",
+            "tutorId": 1,
+            "focus": "Mathematics 201",
+            "profilePic": "profile.jpg",
+            "status": "active",
+            "startTime": "2021-08-01T09:00:00",
+            "endTime": "2021-08-01T10:00:00",
+            "duration": 60,
+            "progress": 20,
+            "reportId": null,
+            "description": "This session focuses on Mathematics 201, covering advanced algebra and calculus topics. The student and tutor will work through problem sets and review key concepts to prepare for upcoming exams.",
+            "chatMessages": [
+                {
+                    "sender": "student",
+                    "message": "Hello, I am ready for the lesson."
+                },
+                {
+                    "sender": "tutor",
+                    "message": "Hello, I am ready to start the lesson."
+                }
+            ],
+            "resources": [
+                "Physics 101"
+            ],
+            "classLink": "https://zoom.com/math-course"
+        },
+        {
+            "id": 2,
+            "student": "John Doe",
+            "studentId": 0,
+            "tutor": "Michael Brown",
+            "tutorId": 2,
+            "focus": "declined course name",
+            "profilePic": "profile2.jpg",
+            "status": "declined",
+            "startTime": "2021-08-02T11:00:00",
+            "endTime": "2021-08-02T12:00:00",
+            "duration": 60,
+            "progress": 100,
+            "chatMessages": [],
+            "resources": [],
+            "classLink": "https://zoom.com/physics-course",
+            "reason": "You  must prove yourself!"
+        },
+        {
+            "id": 3,
+            "student": "John Doe",
+            "studentId": 0,
+            "tutor": "Sarah Davis",
+            "tutorId": 3,
+            "focus": "Chemistry 101",
+            "profilePic": "profile3.jpg",
+            "status": "pending",
+            "message": "I hope this message finds you well. I am interested in learning Chemistry 101 with you. I have a test coming up and I need help preparing for it. I am available on Monday and Wednesday evenings. Please let me know if you are available to tutor me. Thank you."
+        },
+        {
+            "id": 4,
+            "student": "John Doe",
+            "studentId": 0,
+            "tutor": "Sarah Davis",
+            "tutorId": 3,
+            "focus": "Physics 101",
+            "profilePic": "profile4.jpg",
+            "status": "active",
+            "startTime": "2021-08-03T13:00:00",
+            "endTime": "2021-08-03T14:00:00",
+            "duration": 60,
+            "progress": 30,
+            "reportId": null,
+            "description": "This session focuses on Physics 101, covering basic physics concepts and problem-solving strategies. The student and tutor will work through practice problems and review key concepts to build a strong foundation in physics.",
+            "chatMessages": [
+                {
+                    "sender": "student",
+                    "message": "Looking forward to the lesson."
+                },
+                {
+                    "sender": "tutor",
+                    "message": "Let's get started."
+                },
+                {
+                    "sender": "student",
+                    "message": "I'm excited!"
+                },
+                {
+                    "sender": "student",
+                    "message": "Thank you so much"
+                }
+            ],
+            "resources": [
+                "Chemistry 201"
+            ],
+            "classLink": "https://zoom.com/physics-101"
+        },
+        {
+            "id": 5,
+            "student": "John Doe",
+            "studentId": 0,
+            "tutor": "Michael Brown",
+            "tutorId": 2,
+            "focus": "Biology 101",
+            "profilePic": "profile5.jpg",
+            "status": "completed",
+            "startTime": "2021-08-04T15:00:00",
+            "endTime": "2021-08-04T16:00:00",
+            "duration": 60,
+            "progress": 100,
+            "reportId": 1,
+            "chatMessages": [
+                {
+                    "sender": "student",
+                    "message": "Thank you for the lesson."
+                },
+                {
+                    "sender": "tutor",
+                    "message": "You're welcome. Great job today!"
+                }
+            ],
+            "resources": [
+                "Physics 101",
+                "Computer Science 101"
+            ],
+            "classLink": "https://zoom.com/biology-101"
+        },
+        {
+            "id": 6,
+            "student": "John Doe",
+            "studentId": 0,
+            "tutor": "Michael Brown",
+            "tutorId": 2,
+            "profilePic": "",
+            "status": "pending",
+            "startTime": "2024-12-02T00:25:22.679Z",
+            "endTime": "",
+            "duration": 0,
+            "description": "",
+            "message": "sdfdsfvcxvcx"
+        }
+    ]
+}

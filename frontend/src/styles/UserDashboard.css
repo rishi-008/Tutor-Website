@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.dashboardContent{
+    width: 100%;
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidePanel {
+    flex-shrink: 0;
+    width: 250px;
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.profileImageContainer {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.profileImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.statusIndicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+.ButtonsContainer {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    
+}
+
+.ButtonsGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sideButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sideButton button {
+    width: 100%;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 5px 0; 
+    cursor: pointer;
+}
+
+.sideButton:hover {
+    background-color: #34495e; 
+}
+
+
+.dropdownMenu {
+    background-color: #34495e;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdownItem {
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: left;
+}
+
+.dropdownItem:hover {
+    background-color: #3d556e;
+}
+
+.myCoursesContainer {
+    display: flex;
+    align-items: center;
+}
+
+.triangle {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+.triangle.up {
+    border-top: none;
+    border-bottom: 5px solid white;
+}
+
+
+
+
+
+
+
+

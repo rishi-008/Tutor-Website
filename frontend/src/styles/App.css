@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.HomePage {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons .button {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.header-buttons .button:hover {
+  background-color: #555;
+}
+
+.banner {
+  background-color: #f0f8ff;
+  padding: 50px 0;
+  font-size: 40px;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  background-color: #fafafa;
+}
+
+.feature-item {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.course-search {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+
+.tutor-list {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.tutor-list .tutor-list-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.tutors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tutor-card {
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.profile-pic-container {
+  position: relative;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.rating {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 14px;
+  color: #ffcc00; /* Gold color for star */
+  background-color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.tutor-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; 
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.take-course-button {
+  background-color: #ffc107;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.take-course-button:hover {
+  background-color: #e0a806; 
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}

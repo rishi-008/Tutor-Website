@@ -1,0 +1,67 @@
+.courseDetailsContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Ensures content is centered */
+    justify-content: flex-start; /* Aligns content to the top */
+    width: 100%;  /* Ensures container takes full width of its parent */
+    max-width: 800px;  /* You can adjust this to fit your design needs */
+    margin: 20px auto;  /* Centers the container and adds vertical spacing */
+    padding: 20px;
+    background-color: #fff;  /* Background color for visibility */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Adds subtle shadow for depth */
+    border-radius: 10px;  /* Rounded corners */
+}
+
+/* Ensuring inner elements take full width of the container */
+.progressContainer, .chatContainer, .linkContainer, .resourcesSection {
+    width: 100%;  /* Makes each section take full width of its parent */
+    background-color: #f9f9f9;  /* Light background for sections */
+    padding: 15px;  /* Padding for content inside sections */
+    margin-bottom: 10px;  /* Adds space between sections */
+    border-radius: 8px;  /* Rounded corners for sections */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* Subtle shadow for sections */
+}
+
+.backButton {
+    align-self: flex-start;  /* Aligns button to the left */
+    margin-bottom: 20px;  /* Space below the back button */
+    background: none;
+    border: none;
+    color: #007bff;  /* Blue color for button text */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styling buttons to fill more horizontal space */
+.rateButton, .endButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;  /* Green background */
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 1;  /* Allows buttons to grow and fill the container */
+    margin-right: 5px;  /* Space between buttons */
+}
+
+/* Adjusting input field width */
+.chatInput {
+    width: calc(100% - 20px);  /* Adjust width to account for padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.copyButton {
+    padding: 8px 16px;
+    background-color: #0056b3;  /* Darker blue for button */
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;  /* Space above the button */
+}
+

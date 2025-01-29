@@ -1,0 +1,284 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "password": "test",
+      "email": "student@example.com",
+      "student": {
+        "name": "John Doe",
+        "age": 20,
+        "major": "Computer Science",
+        "birthday": "2004-11-13",
+        "language": "english"
+      },
+      "isAdmin": false,
+      "notifications": [
+        {
+          "id": 1,
+          "message": "Urgent: Tutor has dropped your connection request.",
+          "category": "urgent"
+        },
+        {
+          "id": 2,
+          "message": "You have a new connection request from Tutor A.",
+          "category": "unread"
+        },
+        {
+          "id": 3,
+          "message": "Your session with Tutor B has been scheduled.",
+          "category": "read"
+        },
+        {
+          "id": 4,
+          "message": "Urgent: Tutor C accepted your connection request.",
+          "category": "urgent"
+        },
+        {
+          "id": 5,
+          "message": "Reminder: Your next session with Tutor D is in 2 hours.",
+          "category": "unread"
+        },
+        {
+          "id": 6,
+          "message": "You have successfully completed your session with Tutor E.",
+          "category": "read"
+        }
+      ],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 1,
+      "password": "hashed_password_1",
+      "email": "student1@example.com",
+      "student": {
+        "name": "John Doe",
+        "age": 20,
+        "major": "Computer Science",
+        "birthday": "",
+        "language": "english"
+      },
+      "isAdmin": false,
+      "notifications": [],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 2,
+      "password": "hashed_password_2",
+      "email": "student2@example.com",
+      "student": {
+        "name": "Jane Smith",
+        "age": 22,
+        "major": "Mathematics",
+        "birthday": "",
+        "language": "english"
+      },
+      "isAdmin": false,
+      "notifications": [],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 3,
+      "password": "hashed_password_1",
+      "email": "student1@example.com",
+      "student": {
+        "name": "Emily Johnson",
+        "age": 21,
+        "major": "Physics",
+        "birthday": "",
+        "language": "english"
+      },
+      "isAdmin": false,
+      "notifications": [],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 4,
+      "email": "xl@xl.com",
+      "password": "asd",
+      "student": {
+        "name": "Xavier Lin",
+        "birthday": "2024-11-13",
+        "major": "Engineering",
+        "age": 0
+      },
+      "isAdmin": false,
+      "notifications": [],
+      "isApproved": true,
+      "proofdoc": null
+    }
+  ],
+  "tutors": [
+    {
+      "id": 0,
+      "password": "test",
+      "email": "tutor@example.com",
+      "tutor": {
+        "name": "Johny Smith",
+        "rating": 4.2,
+        "education": "PHd in English Literature",
+        "costPerHour": 30,
+        "birthday": "",
+        "language": "english",
+        "description": "I am a tutor with 10 years of experience in teaching English Literature. I have a PHd in English Literature from the University of Toronto. I have taught at the University of Toronto for 5 years. I have a passion for teaching and I love to help students improve their English skills.",
+        "courses": [
+          "English Literature 101",
+          "English Literature 201"
+        ]
+      },
+      "isAdmin": false,
+      "notifications":  [
+        {
+          "id": 1,
+          "message": "Urgent: Student has dropped your course.",
+          "category": "urgent"
+        },
+        {
+          "id": 2,
+          "message": "You have a new connection request from Student A.",
+          "category": "unread"
+        },
+        {
+          "id": 3,
+          "message": "Your session with Student B has been scheduled.",
+          "category": "read"
+        }
+      ],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 1,
+      "password": "hashed_password_3",
+      "email": "tutor1@example.com",
+      "tutor": {
+        "name": "Jane Smith",
+        "rating": 4.8,
+        "education": "M.A. in English Literature",
+        "costPerHour": 35,
+        "birthday": "",
+        "language": "english",
+        "description": "I am a tutor with 5 years of experience in teaching English Literature. I have a M.A. in English Literature from the University of Toronto. I have taught at the University of Toronto for 3 years. I have a passion for teaching and I love to help students improve their English skills.",
+        "courses": [
+          "English Literature 101",
+          "English Literature 201"
+        ]
+      },
+      "isAdmin": false,
+      "notifications": 
+      [
+        {
+          "id": 1,
+          "message": "Urgent: Student has dropped your course.",
+          "category": "urgent"
+        },
+        {
+          "id": 2,
+          "message": "You have a new connection request from Student A.",
+          "category": "unread"
+        },
+        {
+          "id": 3,
+          "message": "Your session with Tutor B has been scheduled.",
+          "category": "read"
+        },
+        {
+          "id": 4,
+          "message": "Urgent: Tutor C accepted your connection request.",
+          "category": "urgent"
+        },
+        {
+          "id": 5,
+          "message": "Reminder: Your next session with Tutor D is in 2 hours.",
+          "category": "unread"
+        },
+        {
+          "id": 6,
+          "message": "You have successfully completed your session with Tutor E.",
+          "category": "read"
+        }
+      ],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 2,
+      "password": "hashed_password_4",
+      "email": "tutor2@example.com",
+      "tutor": {
+        "name": "Michael Brown",
+        "rating": 4.6,
+        "education": "B.A. in History",
+        "costPerHour": 28,
+        "birthday": "",
+        "language": "english",
+        "description": "I am a tutor with 3 years of experience in teaching History. I have a B.A. in History from the University of Toronto. I have taught at the University of Toronto for 1 year. I have a passion for teaching and I love to help students improve their History skills.",
+        "courses": [
+          "History 101",
+          "History 201"
+        ]
+      },
+      "isAdmin": false,
+      "notifications": [
+        {
+          "id": 1,
+          "message": "Urgent: Student has dropped your course.",
+          "category": "urgent"
+        },
+        {
+          "id": 2,
+          "message": "You have a new connection request from Student A.",
+          "category": "unread"
+        },
+        {
+          "id": 3,
+          "message": "Your session with Student B has been scheduled.",
+          "category": "read"
+        }
+      ],
+      "proofdoc": null,
+      "isApproved": true
+    },
+    {
+      "id": 3,
+      "password": "hashed_password_4",
+      "email": "tutor2@example.com",
+      "tutor": {
+        "name": "Sarah Davis",
+        "rating": 4.9,
+        "education": "M.Sc. in Computer Science",
+        "costPerHour": 45,
+        "birthday": "",
+        "language": "english",
+        "description": "I am a tutor with 3 years of experience in teaching Computer Science. I have a M.Sc. in Computer Science from the University of Toronto. I have taught at the University of Toronto for 1 year. I have a passion for teaching and I love to help students improve their Computer Science skills.",
+        "courses": [
+          "Computer Science 101",
+          "Computer Science 201"
+        ]
+      },
+      "isAdmin": false,
+      "notifications": [
+        {
+          "id": 1,
+          "message": "Urgent: Student has dropped your course.",
+          "category": "urgent"
+        },
+        {
+          "id": 2,
+          "message": "You have a new connection request from Student A.",
+          "category": "unread"
+        },
+        {
+          "id": 3,
+          "message": "Your session with Student B has been scheduled.",
+          "category": "read"
+        }
+      ],
+      "proofdoc": null,
+      "isApproved": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  spring-db:
+    image: postgres
+    container_name: zelephant
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: spring_postgres
+      POSTGRES_DB: zelephant
+    ports:
+      - "5433:5432"
+    restart: always
