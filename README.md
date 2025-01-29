@@ -1,6 +1,7 @@
 **Tutor Website**
-Deployed Website: https://sprightly-kitten-69d268.netlify.app
-I'm currently working with Netlify functions to get the backend portion working to get the full functionality working but I am currently facing problems hence only the frontend is working here
+**Deployed Website:** https://sprightly-kitten-69d268.netlify.app
+
+Side Note: (I'm currently working with Netlify functions to get the backend portion working to get the full functionality working but I am currently facing problems hence only the frontend is working here)
 
 Project Live Demo: https://www.youtube.com/watch?v=z4kNH7HaTiQ
 Screenshots of Major Screens:
@@ -16,5 +17,5 @@ Screenshots of Major Screens:
 <img width="1792" alt="Screenshot 2025-01-29 at 6 28 42 PM" src="https://github.com/user-attachments/assets/36b1e41b-dcb6-4539-b668-c236478e28db" />
 <img width="1778" alt="Screenshot 2025-01-29 at 6 28 57 PM" src="https://github.com/user-attachments/assets/f581542d-bade-45b0-aa72-d18d860f5a58" />
 
-Architectural Structure:
+**Architectural Structure:**
 A combination of **client server** and a modified version of **MVC** and **Layered Architecture**
