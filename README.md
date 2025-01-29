@@ -5,7 +5,7 @@
 - **Project Live Demo:** [YouTube Video](https://www.youtube.com/watch?v=z4kNH7HaTiQ)
 
 ## Project Overview
-The Tutor Website is designed to provide an intuitive and efficient platform for online tutoring. Currently, while both frontend and backend have been fully developed and deployed using **Netlify**. The backend is in progress of being fixed on the deployed website, since I'm utilizing **Netlify Functions**, but I am facing some challenges in implementation.
+The Tutor Website is designed to provide an intuitive and efficient platform for online tutoring. Currently, while both frontend and backend have been fully deployed using **Netlify**, the backend is in progress of being fixed on the deployed website, since I'm utilizing **Netlify Functions** but am facing some challenges in implementation.
 
 This is a **full-stack application** built using **React for the frontend** and a **local version of Express for backend logic**, where JSON files serve as the data source instead of a web server. My team and I, consisting of **five members**, implemented various **API routes** to handle operations such as creating and retrieving data. Below is an example of how we manage reports:
 
