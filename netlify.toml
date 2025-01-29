@@ -1,0 +1,3 @@
+[build]
+  command = "./deploy.sh"
+  publish = "dist" # Replace with your actual publish directory
