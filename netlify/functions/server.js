@@ -7,11 +7,11 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../../frontend/build")));
 
-const accountsFilePath = path.join(__dirname, "../../api/accounts.json");
-const reportsFilePath = path.join(__dirname, "../../api/reports.json");
-const sessionsFilePath = path.join(__dirname, "../../api/sessions.json");
-const resourcesFilePath = path.join(__dirname, "../../api/resources.json");
-const universityFilePath = path.join(__dirname, "../../api/universities.json");
+const accountsFilePath = path.join(__dirname, "../../express/api/accounts.json");
+const reportsFilePath = path.join(__dirname, "../../express/api/reports.json");
+const sessionsFilePath = path.join(__dirname, "../../express/api/sessions.json");
+const resourcesFilePath = path.join(__dirname, "../../express/api/resources.json");
+const universityFilePath = path.join(__dirname, "../../express/api/universities.json");
 
 const Tables = Object.freeze({
     ACCOUNTS: accountsFilePath,
