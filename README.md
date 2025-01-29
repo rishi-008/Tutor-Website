@@ -5,7 +5,29 @@
 - **Project Live Demo:** [YouTube Video](https://www.youtube.com/watch?v=z4kNH7HaTiQ)
 
 ## Project Overview
-The Tutor Website is designed to provide an intuitive and efficient platform for online tutoring. Currently, the frontend has been fully developed and deployed using **Netlify**. The backend is in progress, utilizing **Netlify Functions**, but is facing some challenges in implementation.
+The Tutor Website is designed to provide an intuitive and efficient platform for online tutoring. Currently, while both frontend and backend have been fully developed and deployed using **Netlify**. The backend is in progress of being fixed on the deployed website, since I'm utilizing **Netlify Functions**, but I am facing some challenges in implementation.
+
+This is a **full-stack application** built using **React for the frontend** and a **local version of Express for backend logic**, where JSON files serve as the data source instead of a web server. My team and I, consisting of **five members**, implemented various **API routes** to handle operations such as creating and retrieving data. Below is an example of how we manage reports:
+
+```javascript
+app.post("/api/reports", (req, res) => {
+    const newItem = req.body;
+    const data = readData(Tables.REPORTS);
+    data.reports.push(newItem);
+    writeData(data, Tables.REPORTS);
+    res.status(201).json(newItem);
+});
+```
+
+Additionally, we structured our frontend with **controller classes**, ensuring a clean separation of concerns. Here is an example of how we fetch student data:
+
+```javascript
+const getStudentById = async (id) => {
+    const response = await fetch(`/api/student/${id}`);
+    const data = await response.json();
+    return data;
+};
+```
 
 > **Note:** The website is currently frontend-only as backend functionality is under development. Ongoing efforts are being made to integrate backend services to achieve full functionality.
 
@@ -26,10 +48,9 @@ Below are some key screenshots showcasing the interface and functionality:
 ![Screenshot 9](https://github.com/user-attachments/assets/f581542d-bade-45b0-aa72-d18d860f5a58)
 
 ## Next Steps
-- **Backend Development:** Continue working on Netlify Functions to integrate backend functionality.
-- **Authentication & Authorization:** Implement secure login/signup features.
+- **Backend Development:** Continue working on Netlify Functions to integrate backend functionality in the deployed website.
 - **Database Integration:** Establish a robust database connection for user and session management.
 - **Performance Optimization:** Enhance loading speeds and optimize API calls.
 
-This project demonstrates a structured approach to building an online tutoring platform, emphasizing modular architecture and scalability. Further updates will be provided as backend development progresses.
+This project demonstrates a structured approach to building an online tutoring platform, emphasizing modular architecture and scalability. 
 
