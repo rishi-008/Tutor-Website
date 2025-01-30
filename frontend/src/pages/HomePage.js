@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/App.css';
 import TutorCard from '../components/TutorCard';
-import { getTutors } from '../../netlify/functions/controllers/AccountController';
+import { getTutors } from '../controllers/AccountController';
 import { useNavigate } from "react-router-dom";
-import {tutorListBasedOnQuery} from '../../netlify/functions/controllers/AccountController';
+import {tutorListBasedOnQuery} from '../controllers/AccountController';
 
 function HomePage() {
 
