@@ -23,7 +23,7 @@ const getStudentById = async (id) => {
 // }
 
 const getTutors = async () => {
-    const response = await fetch('/.netlify/functions/account/api/tutor');
+    const response = await fetch('/.netlify/functions/server/api/tutor');
     const data = await response.json();
     return data;
 };
