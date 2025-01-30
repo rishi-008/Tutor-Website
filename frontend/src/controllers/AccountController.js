@@ -16,11 +16,17 @@ const getStudentById = async (id) => {
 };
 
 
+// const getTutors = async () => {
+//     const response = await fetch('/api/tutor');
+//     const data = await response.json();
+//     return data;
+// }
+
 const getTutors = async () => {
-    const response = await fetch('/api/tutor');
+    const response = await fetch('/.netlify/functions/account/api/tutor');
     const data = await response.json();
     return data;
-}
+};
 
 const getTutorById = async (id) => {
     const response = await fetch(`/api/tutor/${id}`);
